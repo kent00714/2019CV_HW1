@@ -63,6 +63,8 @@ def get_intrinsic_matrix(objpoints, imgpoints):
     ou = lamda * ov / fv - b[3] * fu * fu / lamda
     ou = - b[3] * fu * fu / lamda
 
+    # ===============================Get Intrisic matrix=====================================    
+    
     intrisic_mtx = np.ndarray(shape=(3, 3), dtype=float)
     intrisic_mtx[0][0] = fu
     intrisic_mtx[0][1] = 0
